@@ -1,5 +1,12 @@
-#Node modules
+# libraries
 node_modules/
 
-#Build folder
+# editor
+.idea
+*.iml
+
+# os
+.DS_Store
+
+# compiled
 dist/
