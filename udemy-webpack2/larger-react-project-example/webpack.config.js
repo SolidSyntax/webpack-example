@@ -57,6 +57,14 @@ module.exports = {
          */
         new HtmlWebpackPlugin({
             template: 'src/index.html'
+        }),
+
+        /*
+            Reduce error checking in a production environment
+            by setting a window scope variable 'NODE_ENV'
+         */
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         })
     ]
 };
